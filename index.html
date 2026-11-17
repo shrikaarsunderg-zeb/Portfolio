@@ -3,21 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G Shrikaar | Portfolio</title>
+  <title>G Shrikaar — Developer &amp; Student Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- EDITH & WEB HUD BACKGROUND OVERLAY -->
+  <div class="hud-overlay" aria-hidden="true">
+    <div class="hud-grid"></div>
+    <div class="hud-scanline"></div>
+    <div class="hud-web-tl">
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,0 L400,0 M0,0 L369,153 M0,0 L283,283 M0,0 L153,369 M0,0 L0,400" stroke="rgba(230,33,41,0.22)" stroke-width="1.2"/>
+        <path d="M70,0 Q65,27 49,49 Q27,65 0,70" stroke="rgba(230,33,41,0.28)" stroke-width="1.2" fill="none"/>
+        <path d="M140,0 Q129,54 99,99 Q54,129 0,140" stroke="rgba(230,33,41,0.24)" stroke-width="1.2" fill="none"/>
+        <path d="M220,0 Q203,85 156,156 Q85,203 0,220" stroke="rgba(230,33,41,0.2)" stroke-width="1.2" fill="none"/>
+        <path d="M310,0 Q286,120 219,219 Q120,286 0,310" stroke="rgba(230,33,41,0.16)" stroke-width="1.2" fill="none"/>
+        <circle cx="0" cy="0" r="14" fill="rgba(230,33,41,0.25)" stroke="rgba(230,33,41,0.6)" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="hud-web-br">
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M400,400 L0,400 M400,400 L31,247 M400,400 L117,117 M400,400 L247,31 M400,400 L400,0" stroke="rgba(230,33,41,0.22)" stroke-width="1.2"/>
+        <path d="M330,400 Q335,373 351,351 Q373,335 400,330" stroke="rgba(230,33,41,0.28)" stroke-width="1.2" fill="none"/>
+        <path d="M260,400 Q271,346 301,301 Q346,271 400,260" stroke="rgba(230,33,41,0.24)" stroke-width="1.2" fill="none"/>
+        <path d="M180,400 Q197,315 244,244 Q315,197 400,180" stroke="rgba(230,33,41,0.2)" stroke-width="1.2" fill="none"/>
+        <path d="M90,400 Q114,280 181,181 Q280,114 400,90" stroke="rgba(230,33,41,0.16)" stroke-width="1.2" fill="none"/>
+        <circle cx="400" cy="400" r="14" fill="rgba(230,33,41,0.25)" stroke="rgba(230,33,41,0.6)" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+
   <!-- 1. NAVBAR -->
   <nav class="navbar">
-    <a href="#" class="logo">G<span class="logo-red">.S</span></a>
-    <div class="nav-links">
-      <a href="#journey">Journey</a>
-      <a href="#stats">Stats</a>
-      <a href="#skills">Skills</a>
-      <a href="#profiles">Profiles</a>
-      <a href="#activity">Activity</a>
-      <a href="#contact">Contact</a>
+    <div class="nav-container">
+      <a href="#" class="logo">G<span class="logo-red">.S</span></a>
+      <div class="nav-links">
+        <a href="#journey"><span class="nav-num">01</span>Journey</a>
+        <a href="#stats"><span class="nav-num">02</span>Stats</a>
+        <a href="#skills"><span class="nav-num">03</span>Skills</a>
+        <a href="#profiles"><span class="nav-num">04</span>Profiles</a>
+        <a href="#activity"><span class="nav-num">05</span>Activity</a>
+        <a href="#contact"><span class="nav-num">06</span>Contact</a>
+      </div>
     </div>
   </nav>
 
@@ -31,7 +59,61 @@
     <div class="light-beam beam-left"></div>
     <div class="light-beam beam-right"></div>
 
+    <!-- EDITH Central HUD Reticle -->
+    <div class="edith-reticle" aria-hidden="true">
+      <div class="reticle-ring"></div>
+      <div class="reticle-crosshair"></div>
+    </div>
+
+    <!-- PURE CSS INTERACTIVE SPIDER-BOT MOUSE TRACKER GRID -->
+    <div class="spider-bot-container">
+      <div class="bot-cell cell-1"></div>
+      <div class="bot-cell cell-2"></div>
+      <div class="bot-cell cell-3"></div>
+      <div class="bot-cell cell-4"></div>
+      <div class="bot-cell cell-5"></div>
+      <div class="bot-cell cell-6"></div>
+      <div class="bot-cell cell-7"></div>
+      <div class="bot-cell cell-8"></div>
+      <div class="bot-cell cell-9"></div>
+
+      <!-- CHEST SPIDER-BOT DRONE -->
+      <div class="spider-bot" tabindex="0" title="Click to emit EMP light pulse">
+        <div class="bot-shockwave"></div>
+        <svg class="bot-svg" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Top Left Legs -->
+          <path d="M100 95 L65 55 L35 70" stroke="#e62129" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M95 105 L50 85 L20 110" stroke="#e62129" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Bottom Left Legs -->
+          <path d="M95 125 L45 145 L25 180" stroke="#e62129" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M100 135 L65 175 L45 210" stroke="#e62129" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Top Right Legs -->
+          <path d="M140 95 L175 55 L205 70" stroke="#e62129" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M145 105 L190 85 L220 110" stroke="#e62129" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Bottom Right Legs -->
+          <path d="M145 125 L195 145 L215 180" stroke="#e62129" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M140 135 L175 175 L195 210" stroke="#e62129" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- Central Armored Spider Torso -->
+          <polygon points="120,80 135,100 130,135 120,155 110,135 105,100" fill="#1f0b10" stroke="#e62129" stroke-width="2.5"/>
+          <polygon points="120,68 128,78 112,78" fill="#800020" stroke="#e62129" stroke-width="1.8"/>
+
+          <!-- Glowing Arc Core / Eye -->
+          <circle cx="120" cy="112" r="7" fill="#ffffff" stroke="#e62129" stroke-width="2"/>
+          <circle cx="120" cy="112" r="14" stroke="rgba(230,33,41,0.5)" stroke-width="1.5" stroke-dasharray="2 2"/>
+        </svg>
+        <span class="bot-hint">[ CLICK SPIDER-BOT FOR EMP PULSE ]</span>
+      </div>
+    </div>
+
     <div class="hero-content">
+      <!-- EDITH Telemetry -->
+      <div class="edith-telemetry">
+        <span class="telemetry-item">[ E.D.I.T.H. // OS v2.6 ]</span>
+        <span class="telemetry-item">[ COORD: 17.3850° N / 78.4867° E ]</span>
+      </div>
+
       <!-- Spider-Sense Badge -->
       <div class="hero-badge">
         <span class="pulse-dot"></span>
@@ -57,6 +139,13 @@
         <a href="https://www.linkedin.com/in/g-shrikaar-b4668b361" target="_blank" rel="noopener noreferrer" class="btn btn-solid">View LinkedIn</a>
         <a href="#journey" class="btn btn-outline">See My Journey</a>
       </div>
+    </div>
+
+    <!-- Hero Corner Meta -->
+    <div class="hero-corner-meta">
+      <span class="meta-location">HYDERABAD, IN</span>
+      <span class="meta-dot">•</span>
+      <span class="meta-year">2026 ARCHIVE</span>
     </div>
 
     <!-- Bottom-Left Scroll Hint -->
@@ -90,21 +179,37 @@
   <!-- 4. STATS -->
   <section id="stats" class="section stats-section">
     <div class="container">
-      <h2 class="section-title">By the <span class="text-red">Numbers</span></h2>
+      <div class="section-header-block">
+        <span class="section-tag">[ METRICS // 01 ]</span>
+        <h2 class="section-title">By the <span class="text-red">Numbers</span></h2>
+        <!-- Motivational Spidey Posture Badge -->
+        <div class="section-posture-badge">
+          <span class="posture-icon">🕷️</span>
+          <span class="posture-text">"WITH GREAT STATS COMES GREAT CONSISTENCY"</span>
+        </div>
+      </div>
+
       <div class="stats-grid">
         <div class="stat-card">
+          <span class="stat-index">01 / HACK</span>
           <div class="stat-number">2</div>
           <p class="stat-label">Hackathons joined</p>
         </div>
+
         <div class="stat-card">
+          <span class="stat-index">02 / SPORTS</span>
           <div class="stat-number">5</div>
           <p class="stat-label">Game wins in basketball</p>
         </div>
+
         <div class="stat-card">
+          <span class="stat-index">03 / HOUSE</span>
           <div class="stat-number">2nd</div>
           <p class="stat-label">Place for Vijayanagara House</p>
         </div>
+
         <div class="stat-card">
+          <span class="stat-index">04 / REACH</span>
           <div class="stat-number">100+</div>
           <p class="stat-label">Impressions on my AI post</p>
         </div>
@@ -115,8 +220,16 @@
   <!-- 5. JOURNEY TIMELINE -->
   <section id="journey" class="section journey-section">
     <div class="container">
-      <h2 class="section-title">My <span class="text-red">Journey</span></h2>
-      <p class="section-subtitle">Hover or tap a card to flip it</p>
+      <div class="section-header-block">
+        <span class="section-tag">[ ARCHIVE // 02 ]</span>
+        <h2 class="section-title">My <span class="text-red">Journey</span></h2>
+        <p class="section-subtitle">Hover or tap a card to flip it</p>
+        <!-- Spidey Flip Acrobatic Posture Badge -->
+        <div class="section-posture-badge flip-posture">
+          <span class="posture-icon">🕸️</span>
+          <span class="posture-text">"ACROBATIC FLIP DETECTED — FLICK OR TAP CARDS TO REVEAL"</span>
+        </div>
+      </div>
 
       <div class="timeline-container">
         <!-- Center line tracks -->
@@ -129,12 +242,16 @@
           <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <span class="card-date">Aug 2026 – Present</span>
+                <div class="card-meta-top">
+                  <span class="card-date">Aug 2026 – Present</span>
+                  <span class="card-badge-num">01</span>
+                </div>
                 <h3 class="card-title">B.Tech, Computer Science</h3>
                 <p class="card-org">Newton School of Technology</p>
                 <span class="flip-hint">↺ Flip for details</span>
               </div>
               <div class="flip-card-back">
+                <span class="back-title">Key Highlights</span>
                 <ul class="achievements-list">
                   <li>Specializing in AI and Machine Learning</li>
                   <li>Currently studying front-end and back-end development</li>
@@ -151,12 +268,16 @@
           <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <span class="card-date">In Progress</span>
+                <div class="card-meta-top">
+                  <span class="card-date">In Progress</span>
+                  <span class="card-badge-num">02</span>
+                </div>
                 <h3 class="card-title">Wispr Flow x Scaler Hackathon</h3>
                 <p class="card-org">Participant</p>
                 <span class="flip-hint">↺ Flip for details</span>
               </div>
               <div class="flip-card-back">
+                <span class="back-title">Key Highlights</span>
                 <ul class="achievements-list">
                   <li>Currently taking part in the hackathon</li>
                   <li>Building a project under time pressure</li>
@@ -172,12 +293,16 @@
           <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <span class="card-date">Participant</span>
+                <div class="card-meta-top">
+                  <span class="card-date">Participant</span>
+                  <span class="card-badge-num">03</span>
+                </div>
                 <h3 class="card-title">SMART INDIA Hackathon</h3>
                 <p class="card-org">National Level Hackathon</p>
                 <span class="flip-hint">↺ Flip for details</span>
               </div>
               <div class="flip-card-back">
+                <span class="back-title">Key Highlights</span>
                 <ul class="achievements-list">
                   <li>Took part in the SMART INDIA Hackathon</li>
                   <li>Worked on solving a real-world problem with tech</li>
@@ -193,12 +318,16 @@
           <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <span class="card-date">2023 – 2025</span>
+                <div class="card-meta-top">
+                  <span class="card-date">2023 – 2025</span>
+                  <span class="card-badge-num">04</span>
+                </div>
                 <h3 class="card-title">Intermediate (HPS Ramanthapur)</h3>
                 <p class="card-org">The Hyderabad Public School, Ramanthapur</p>
                 <span class="flip-hint">↺ Flip for details</span>
               </div>
               <div class="flip-card-back">
+                <span class="back-title">Key Highlights</span>
                 <ul class="achievements-list">
                   <li>Won 5 basketball games for the house</li>
                   <li>Won first place in basketball competitions</li>
@@ -214,12 +343,16 @@
           <div class="flip-card" tabindex="0">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <span class="card-date">2023 – 2025</span>
+                <div class="card-meta-top">
+                  <span class="card-date">2023 – 2025</span>
+                  <span class="card-badge-num">05</span>
+                </div>
                 <h3 class="card-title">Leadership</h3>
                 <p class="card-org">Vijayanagara House (Yellow House)</p>
                 <span class="flip-hint">↺ Flip for details</span>
               </div>
               <div class="flip-card-back">
+                <span class="back-title">Key Highlights</span>
                 <ul class="achievements-list">
                   <li>Led the yellow house, Vijayanagara</li>
                   <li>Helped the house reach 2nd place overall</li>
@@ -236,6 +369,7 @@
   <!-- 6. QUOTE BLOCK -->
   <section class="quote-section">
     <div class="container quote-container">
+      <span class="quote-tag">[ PHILOSOPHY ]</span>
       <blockquote class="quote-text">
         “With great code comes great responsibility.”
       </blockquote>
@@ -246,13 +380,22 @@
   <!-- 7. SKILLS -->
   <section id="skills" class="section skills-section">
     <div class="container">
-      <h2 class="section-title">My <span class="text-red">Skills</span></h2>
+      <div class="section-header-block">
+        <span class="section-tag">[ CAPABILITIES // 03 ]</span>
+        <h2 class="section-title">My <span class="text-red">Skills</span></h2>
+        <p class="section-subtitle">Core technical stack and specialized disciplines</p>
+        <!-- Spidey Wall Crawler Posture Badge -->
+        <div class="section-posture-badge">
+          <span class="posture-icon">🧗‍♂️</span>
+          <span class="posture-text">"WALL-CRAWLER MATRIX // SCALING NEW TECH HORIZONS"</span>
+        </div>
+      </div>
 
       <div class="skills-bars-container">
         <!-- HTML 90% -->
         <div class="skill-row">
           <div class="skill-header">
-            <span class="skill-name">HTML</span>
+            <span class="skill-name"><span class="skill-code">01 /</span> HTML</span>
             <span class="skill-percent">90%</span>
           </div>
           <div class="skill-track">
@@ -263,7 +406,7 @@
         <!-- Python 60% -->
         <div class="skill-row">
           <div class="skill-header">
-            <span class="skill-name">Python</span>
+            <span class="skill-name"><span class="skill-code">02 /</span> Python</span>
             <span class="skill-percent">60%</span>
           </div>
           <div class="skill-track">
@@ -274,7 +417,7 @@
         <!-- CSS 20% -->
         <div class="skill-row">
           <div class="skill-header">
-            <span class="skill-name">CSS</span>
+            <span class="skill-name"><span class="skill-code">03 /</span> CSS</span>
             <span class="skill-percent">20%</span>
           </div>
           <div class="skill-track">
@@ -285,7 +428,7 @@
         <!-- JavaScript 20% -->
         <div class="skill-row">
           <div class="skill-header">
-            <span class="skill-name">JavaScript</span>
+            <span class="skill-name"><span class="skill-code">04 /</span> JavaScript</span>
             <span class="skill-percent">20%</span>
           </div>
           <div class="skill-track">
@@ -308,15 +451,27 @@
     </div>
   </section>
 
-  <!-- PROFILES -->
+  <!-- 8. PROFILES -->
   <section id="profiles" class="section profiles-section">
     <div class="container">
-      <h2 class="section-title">Coding <span class="text-red">Profiles</span></h2>
-      <p class="section-subtitle">Where I write code, solve algorithms, and push projects</p>
+      <div class="section-header-block">
+        <span class="section-tag">[ DIRECTORY // 04 ]</span>
+        <h2 class="section-title">Coding <span class="text-red">Profiles</span></h2>
+        <p class="section-subtitle">Where I write code, solve algorithms, and push projects</p>
+        <!-- Spidey Web Swing Posture Badge -->
+        <div class="section-posture-badge">
+          <span class="posture-icon">🕸️</span>
+          <span class="posture-text">"SWINGING THROUGH OPEN-SOURCE REPOSITORIES"</span>
+        </div>
+      </div>
 
       <div class="profiles-grid">
         <!-- GitHub Card -->
         <div class="profile-card">
+          <div class="profile-top-line">
+            <span class="profile-tag">OPEN SOURCE</span>
+            <span class="profile-id">[01]</span>
+          </div>
           <div class="profile-header">
             <div class="profile-icon-badge">GH</div>
             <div>
@@ -334,6 +489,10 @@
 
         <!-- HackerRank Card -->
         <div class="profile-card">
+          <div class="profile-top-line">
+            <span class="profile-tag">COMPETITIVE</span>
+            <span class="profile-id">[02]</span>
+          </div>
           <div class="profile-header">
             <div class="profile-icon-badge">HR</div>
             <div>
@@ -351,6 +510,10 @@
 
         <!-- LinkedIn Card -->
         <div class="profile-card">
+          <div class="profile-top-line">
+            <span class="profile-tag">NETWORK</span>
+            <span class="profile-id">[03]</span>
+          </div>
           <div class="profile-header">
             <div class="profile-icon-badge">IN</div>
             <div>
@@ -369,10 +532,14 @@
     </div>
   </section>
 
-  <!-- 8. ACTIVITY -->
+  <!-- 9. ACTIVITY -->
   <section id="activity" class="section activity-section">
     <div class="container">
-      <h2 class="section-title">Recent <span class="text-red">Activity</span></h2>
+      <div class="section-header-block">
+        <span class="section-tag">[ SPOTLIGHT // 05 ]</span>
+        <h2 class="section-title">Recent <span class="text-red">Activity</span></h2>
+        <p class="section-subtitle">Workshops, certifications, and community engagement</p>
+      </div>
 
       <div class="activity-card-container">
         <div class="activity-card">
@@ -396,9 +563,10 @@
     </div>
   </section>
 
-  <!-- 9. CONTACT -->
+  <!-- 10. CONTACT -->
   <section id="contact" class="section contact-section">
     <div class="container text-center">
+      <span class="section-tag">[ GET IN TOUCH // 06 ]</span>
       <h2 class="section-title">Let's <span class="text-red">Connect</span></h2>
       <p class="section-subtitle">Got a hackathon, a project, or a basketball rematch? Let's talk.</p>
       <div class="contact-buttons">
@@ -409,10 +577,43 @@
     </div>
   </section>
 
-  <!-- 10. FOOTER -->
+  <!-- 11. FOOTER WITH SPIDER-MAN DUAL WEB PULLING ANCHOR -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-content">
       <p class="footer-text">© 2026 G Shrikaar. Built with HTML &amp; CSS.</p>
+      <p class="footer-status">ONLINE // READY TO BUILD</p>
+    </div>
+
+    <!-- SPIDER-MAN WEB TENSION HOLDING THE DOM TOGETHER -->
+    <div class="web-pull-anchor" title="Spider-Man holding the page with dual web strands">
+      <div class="web-line-left"></div>
+      <div class="web-line-right"></div>
+      <div class="spidey-pull-figure">
+        <svg class="pull-figure-svg" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Web Line Strands in Hands -->
+          <line x1="0" y1="10" x2="52" y2="52" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="4 2"/>
+          <line x1="160" y1="10" x2="108" y2="52" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="4 2"/>
+          <line x1="0" y1="18" x2="52" y2="52" stroke="rgba(230,33,41,0.7)" stroke-width="1.5"/>
+          <line x1="160" y1="18" x2="108" y2="52" stroke="rgba(230,33,41,0.7)" stroke-width="1.5"/>
+
+          <!-- Stylized Crouched Web-Pulling Silhouette -->
+          <circle cx="80" cy="38" r="16" fill="#800020" stroke="#e62129" stroke-width="2"/>
+          <!-- Mask Lenses -->
+          <polygon points="73,36 78,42 74,44" fill="#ffffff"/>
+          <polygon points="87,36 82,42 86,44" fill="#ffffff"/>
+          <!-- Muscular Torso & Arms Pulling Tension -->
+          <path d="M68 50 L52 52 L56 65 L72 62 Z" fill="#e62129" stroke="#800020" stroke-width="1.5"/>
+          <path d="M92 50 L108 52 L104 65 L88 62 Z" fill="#e62129" stroke="#800020" stroke-width="1.5"/>
+          <path d="M70 50 Q80 48 90 50 L86 78 L74 78 Z" fill="#800020" stroke="#e62129" stroke-width="2"/>
+          <!-- Crouched Knees on Ground -->
+          <path d="M74 78 L58 88 L52 108 L66 110 L76 92 Z" fill="#e62129" stroke="#800020" stroke-width="1.5"/>
+          <path d="M86 78 L102 88 L108 108 L94 110 L84 92 Z" fill="#e62129" stroke="#800020" stroke-width="1.5"/>
+        </svg>
+        <div class="web-tension-label">
+          <span class="tension-code">[ DUAL WEB TENSION: 500,000 PSI ]</span>
+          <span class="tension-desc">"HOLDING THE ENTIRE WEBSITE TOGETHER // MAXIMUM CODE STRENGTH"</span>
+        </div>
+      </div>
     </div>
   </footer>
 
